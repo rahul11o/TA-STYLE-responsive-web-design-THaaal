@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom Styles */
+ *,
+ *::before,
+ ::after{
+ box-sizing: border-box;
+ }
+html{
+    font-size: 16px;
+}
+ body{
+     line-height: 1.4;
+     font-family:'Poppins', sans-serif;
+ }
+.container{
+    max-width: 1350px;
+   margin: 0px auto;
+   width: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.justify-cont-center{
+justify-content: center;
+}
+.full-width{
+    width: 100%;
+}
+img{
+    height: 100%;}
+a{
+    text-decoration: none;
+}
+.btn{
+    background-color: #35B566;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+    display: inline-block;
+    margin: 1.3rem 0rem;
+    border-radius: 0.3rem;
+
+}
+/* Mobile-first-approach */
+
+/* Hero-Header */
+
+.hero-header{
+    padding: 1.6rem;
+    background-color: #212946;
+    text-align: center;
+}
+li{
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}
+.hero-header a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.hero-header .active{
+    color: #35B566;
+}
+/* Section */
+.hero-section{
+    background-color: #E9ECFC;
+    margin-bottom: 2rem;
+}
+.hero-article{ 
+    margin: 2rem; 
+}
+
+.hero-text h2{
+    font-size: 3rem;
+    margin: 1.3rem 0rem;
+    text-transform: capitalize;
+}
+.hero-text p{
+    font-size: 1.2rem;
+    color: gray;
+   
+}
+.hero-text .btn{
+    padding: 0.9rem 3.6rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+/* Blog-Section */
+.blog-article{
+  padding: 2rem;
+   
+}
+.blog-article img{
+    height: 100%;
+}
+.blog-header h1{
+    font-size: 3.7rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}  
+.blog-text h3{
+    font-size: 2rem;
+    margin: 1.1rem 0rem;
+    text-transform: capitalize;}
+/* Footer */
+.footer{
+    font-size: 1.8rem;
+    color: rgb(223, 208, 208);
+    text-align: center;
+    padding: 2rem;
+    background-color:#212946 ;
+}
+.footer a{
+    color:rgb(223, 208, 208);
+    margin-top: 1rem;
+    display: inline-block;
+    margin-right: 1.4rem;
+}
+/* For Desktop */
+@media  screen and (min-width:768px) {
+
+    .flex-jc-space-btw{
+       display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .flex-54{
+        flex: 0 1 54%; 
+        
+    }
+    .flex-44{
+        flex: 0 1 44%;
+    }
+    .flex-31{
+        flex: 0 1 31%;
+    }
+    
+    
+/* header */
+    
+    li{
+        margin-top: 0rem;}
+
+/* Hero-Section */  
+
+    .hero-section{
+     margin-top: 0rem;
+     }
+     .hero-article{ 
+        padding: 2rem 0rem;  
+        margin: 0rem; 
+       }
+    .flex-54{
+        order: 1;
+    }
+     .hero-text h2{
+     margin-bottom: 1rem;
+     margin-top: 0rem;}
+        
+}   .hero-text .btn{
+    margin-top: 1,5rem;
+    padding: 0.7rem 1.6rem;  
+}
+/* Blog_Section */
+.blog-article{
+    padding: 0rem;
+    margin-bottom: 3rem;
+}
+
+
